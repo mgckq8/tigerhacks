@@ -19,19 +19,43 @@
             }
             
             #carrotRocket {
-                background-image: url('img/space_background.jpg');
+                background-image: url('imgs/carrotRocket.jpg');
+/*                background-color: aqua;*/
+                background-size: cover;
+                width: 200px;
+                height: 200px;
+                font-size: 2rem;
+                color: white;
+                font-weight: 600;
+            }
+            
+            #meat {
+                background-image: url('imgs/meat.jpg');
+                background-size: cover;
+                width: 200px;
+                height: 200px;
+                font-size: 2rem;
+                color: white;
+                font-weight: 600;
             }
         
         </style>
-        
+        <script>
+            function openCarrot() {
+                window.location.href = "carrot.html";
+            }            
+            function openMeat() {
+                window.location.href = "meat.html";
+            }
+            
+        </script>
     </head>
     <body>
         <p>hello </p>
         
-        <button id="carrotRocket" type="button">Click me
-<!--            <img alt="carrotRocket" src="imgs/">-->
-            
-        </button>
+        <button onclick="openCarrot()" type="button" id="carrotRocket" >Click me</button>
+        
+        <button onclick="openMeat()" type="button" id="meat">Click me</button>
     
     </body>
 </html>
