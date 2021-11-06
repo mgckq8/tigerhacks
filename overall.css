@@ -36,6 +36,63 @@
         background-image: url('imgs/candy.svg');
     }
 
+    #carrotdiv {
+      position: relative;
+        float: left;
+    }
+    #carrotdivheader {
+      padding: 10px;
+      cursor: move;
+    }
+    #meatdiv {
+      position: relative;
+        float: left;
+    }
+    #meatdivheader {
+      padding: 10px;
+      cursor: move;
+    }
+    #cheesediv {
+      position: relative;
+        float: left;
+    }
+    #cheesedivheader {
+      padding: 10px;
+      cursor: move;
+    }
+    #breaddiv {
+      position: relative;
+        float: left;
+    }
+    #breaddivheader {
+      padding: 10px;
+      cursor: move;
+    }
+    #candydiv {
+      position: relative;
+        float: left;
+    }
+    #candydivheader {
+      padding: 10px;
+      cursor: move;
+    }
+    #veggiediv {
+      position: relative;
+        float: left;
+    }
+    #veggiedivheader {
+      padding: 10px;
+      cursor: move;
+    }
+    #applediv {
+      position: relative;
+        float: left;
+    }
+    #appledivheader {
+      padding: 10px;
+      cursor: move;
+    }
+
     .button {
         background-color: transparent;
         border: none;
@@ -45,6 +102,7 @@
         font-size: 2rem;
         color: white;
         font-weight: 600;
+        
     }
     .dropdown {
         display: inline-block;
