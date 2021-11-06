@@ -35,6 +35,17 @@
                 background-image: url('imgs/apple.svg');
             }
             
+            #cheese {
+                background-image: url('imgs/cheese.svg');
+            }
+            
+            #veggie {
+                background-image: url('imgs/broccoli.svg');
+            }
+            #bread {
+                background-image: url('imgs/bread.svg');
+            }
+            
             .button {
                 background-color: transparent;
                 border: none;
@@ -58,6 +69,16 @@
                 window.location.href = "fruits.html";
             }
             
+            function openCheese() {
+                window.location.href = "dairy.html";
+            }
+            function openVeggies() {
+                window.location.href = "vegetables.html";
+            }
+            
+            function openBread() {
+                window.location.href = "grain.html";
+            }
         </script>
     </head>
     <body>
@@ -68,6 +89,12 @@
         
         
         <button onclick="openApple()" type="button" id="apple" class="button"></button>
+        
+        <button onclick="openCheese()" type="button" id="cheese" class="button"></button>
+        
+        <button onclick="openVeggies()" type="button" id="veggie" class="button"></button>
+        
+        <button onclick="openBread()" type="button" id="bread" class="button"></button>
 
     </body>
 
