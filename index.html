@@ -9,6 +9,7 @@
     <head>
         <title>Solar Fitness</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
         <style>
             body{
@@ -21,14 +22,46 @@
             body {
                 background-image: url('imgs/spaceBackground.jpg');
             }
+            
+            #carrotRocket {
+                background-image: url('imgs/carrotRocket.jpg');
+/*                background-color: aqua;*/
+                background-size: cover;
+                width: 200px;
+                height: 200px;
+                font-size: 2rem;
+                color: white;
+                font-weight: 600;
+            }
+            
+            #meat {
+                background-image: url('imgs/meat.jpg');
+                background-size: cover;
+                width: 200px;
+                height: 200px;
+                font-size: 2rem;
+                color: white;
+                font-weight: 600;
+            }
         
         </style>
-        
+        <script>
+            function openCarrot() {
+                window.location.href = "carrot.html";
+            }            
+            function openMeat() {
+                window.location.href = "meat.html";
+            }
+            
+        </script>
     </head>
     <body>
 
-
-
+        <p>hello </p>
+        
+        <button onclick="openCarrot()" type="button" id="carrotRocket" >Click me</button>
+        
+        <button onclick="openMeat()" type="button" id="meat">Click me</button>
 
     </body>
 
