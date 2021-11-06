@@ -4,6 +4,7 @@
 <!--
     Sources:
         background image: https://www.space.com/27600-around-a-star-system-space-wallpaper.html
+        draggable: https://www.w3schools.com/howto/howto_js_draggable.asp
 -->
 <html lang = 'en'>
     <head>
@@ -37,24 +38,110 @@
             function openCandy() {
                 window.location.href = "fats.html";
             }
+            
+            function callDrag(arr) {
+                for (let i = 0; i < arr.length; i++) {
+                    dragElement(document.getElementById(arr[i]));
+            
+                }
+            }
+            
+            function changeCSS(id) {
+                document.getElementById(id).style.position = "absolute";
+                document.getElementById(id).style.float = "none";
+            }
+            
+        function dragElement(elmnt) {
+          var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+            var elementId = elmnt.id + "header";
+          if (document.getElementById(elementId)) {
+            // if present, the header is where you move the DIV from:
+            document.getElementById(elementId).onmousedown = dragMouseDown;
+          } else {
+            // otherwise, move the DIV from anywhere inside the DIV:
+              if(elmnt) {
+                  elmnt.onmousedown = dragMouseDown;
+              }
+            
+          }
+
+          function dragMouseDown(e) {
+            e = e || window.event;
+            e.preventDefault();
+            // get the mouse cursor position at startup:
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            document.onmouseup = closeDragElement;
+            // call a function whenever the cursor moves:
+            document.onmousemove = elementDrag;
+          }
+
+          function elementDrag(e) {
+            e = e || window.event;
+            e.preventDefault();
+            // calculate the new cursor position:
+            pos1 = pos3 - e.clientX;
+            pos2 = pos4 - e.clientY;
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            // set the element's new position:
+            elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+            elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+          }
+
+          function closeDragElement() {
+            // stop moving when mouse button is released:
+            document.onmouseup = null;
+            document.onmousemove = null;
+          }
+        }
+            
+            
         </script>
     </head>
-    <body>
+    <body onload="callDrag(['carrotdiv', 'meatdiv', 'applediv', 'cheesediv','veggiediv', 'breaddiv', 'candydiv'])">
         
-        <button onclick="openCarrot()" type="button" id="carrotRocket" class="button"></button>
+        <div id="carrotdiv" onclick="changeCSS('carrotdiv')">
+            <div id="carrotdivheader">
+                <button id="carrotRocket" ondblclick="openCarrot()" type="button"  class="button"></button>
+            </div>
+        </div>
         
-        <button onclick="openMeat()" type="button" id="meat" class="button"></button>
+        <div id="meatdiv" onclick="changeCSS('meatdiv')">
+            <div id="meatdivheader">
+                <button ondblclick="openMeat()" type="button" id="meat" class="button"></button>
+            </div>
+        </div>
         
+        <div id="applediv" onclick="changeCSS('applediv')">
+            <div id="appledivheader">
+                <button ondblclick="openApple()" type="button" id="apple" class="button"></button>
+            </div>
+        </div>
         
-        <button onclick="openApple()" type="button" id="apple" class="button"></button>
+        <div id="cheesediv" onclick="changeCSS('cheesediv')">
+            <div id="cheesedivheader">
+                <button ondblclick="openCheese()" type="button" id="cheese" class="button"></button>
+            </div>
+        </div>
         
-        <button onclick="openCheese()" type="button" id="cheese" class="button"></button>
+        <div id="veggiediv" onclick="changeCSS('veggiediv')">
+            <div id="veggiedivheader">
+                <button ondblclick="openVeggies()" type="button" id="veggie" class="button"></button>
+            </div>
+        </div>
         
-        <button onclick="openVeggies()" type="button" id="veggie" class="button"></button>
+        <div id="breaddiv" onclick="changeCSS('breaddiv')">
+            <div id="breaddivheader">
+                <button ondblclick="openBread()" type="button" id="bread" class="button"></button>
+            </div>
+        </div>
         
-        <button onclick="openBread()" type="button" id="bread" class="button"></button>
-        
-        <button onclick="openCandy()" type="button" id="candy" class="button"></button>
+        <div id="candydiv" onclick="changeCSS('candydiv')">
+            <div id="candydivheader">
+                <button ondblclick="openCandy()" type="button" id="candy" class="button"></button>
+            </div>
+        </div>
 
     </body>
 
