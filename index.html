@@ -24,29 +24,32 @@
             }
             
             #carrotRocket {
-                background-image: url('imgs/carrotRocket.jpg');
-/*                background-color: aqua;*/
-                background-size: cover;
-                width: 200px;
-                height: 200px;
-                font-size: 2rem;
-                color: white;
-                font-weight: 600;
+                background-image: url('imgs/carrotRocket.svg');
             }
             
             #meat {
-                background-image: url('imgs/meat.jpg');
-                background-size: cover;
-                width: 200px;
-                height: 200px;
-                font-size: 2rem;
-                color: white;
-                font-weight: 600;
+                background-image: url('imgs/meat.svg');
             }
             
             #apple {
-                background-image: url('imgs/apple.png');
-                background-size: cover;
+                background-image: url('imgs/apple.svg');
+            }
+            
+            #cheese {
+                background-image: url('imgs/cheese.svg');
+            }
+            
+            #veggie {
+                background-image: url('imgs/broccoli.svg');
+            }
+            #bread {
+                background-image: url('imgs/bread.svg');
+            }
+            
+            .button {
+                background-color: transparent;
+                border: none;
+                 background-size: cover;
                 width: 200px;
                 height: 200px;
                 font-size: 2rem;
@@ -66,18 +69,32 @@
                 window.location.href = "fruits.html";
             }
             
+            function openCheese() {
+                window.location.href = "dairy.html";
+            }
+            function openVeggies() {
+                window.location.href = "vegetables.html";
+            }
+            
+            function openBread() {
+                window.location.href = "grain.html";
+            }
         </script>
     </head>
     <body>
-
-        <p>hello </p>
         
-        <button onclick="openCarrot()" type="button" id="carrotRocket">Click me</button>
+        <button onclick="openCarrot()" type="button" id="carrotRocket" class="button"></button>
         
-        <button onclick="openMeat()" type="button" id="meat">Click me</button>
+        <button onclick="openMeat()" type="button" id="meat" class="button"></button>
         
         
-        <button onclick="openApple()" type="button" id="apple">Click me</button>
+        <button onclick="openApple()" type="button" id="apple" class="button"></button>
+        
+        <button onclick="openCheese()" type="button" id="cheese" class="button"></button>
+        
+        <button onclick="openVeggies()" type="button" id="veggie" class="button"></button>
+        
+        <button onclick="openBread()" type="button" id="bread" class="button"></button>
 
     </body>
 
