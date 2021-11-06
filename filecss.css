@@ -1,0 +1,59 @@
+
+            
+            ul{
+                text-align: center
+                list-style-position: inside;
+                color: black;
+                
+                
+            }
+            li{
+                font-family: "Comic Sans MS", "Comic Sans", cursive;
+                color: white;
+                font-size: 20px;
+                
+            }
+            h1{
+                text-align: center;
+                font-size-adjust: 100px;
+                font-family: "Comic Sans MS","Comic Sans", Cursive;
+                color: white;
+                padding-bottom: 100px;
+            }
+            nav{
+                position: left;
+                position: top;
+                color: white;
+                
+            }
+            #Facts{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 5px solid white;
+                border-style: inset;
+                width: 70%;
+                margin-right: auto;
+                margin-left: auto;
+                margin-bottom: auto;
+                    
+                
+                
+                
+            }
+            .links{
+                color: white;
+                font-size: 20px;
+                text-underline-position: auto;
+                font-family: "Comic Sans MS", "Comic Sans", cursive;
+                
+            }
+            .titleoffacts{
+                font-family: "Comic Sans MS", "Comic Sans", cursive;
+                color: white;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 30px;
+                
+            }
