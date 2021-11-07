@@ -1,5 +1,7 @@
 
-            
+            body{
+
+            }
             ul{
                 text-align: center;
                 list-style-position: inside;
@@ -26,7 +28,7 @@
                 color: white;
                 
             }
-            #Facts{
+            .Facts{
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -114,6 +116,16 @@
         overflow-x: hidden;
         max-height: none !important;
         height: auto !important;
+    }
+    p{
+        color: white;
+
+    }
+    input{
+        color: white;
+    }
+    label{
+        color: white;
     }
     
             
