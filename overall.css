@@ -1,8 +1,9 @@
     body{
-        background-image: url(https://i.pinimg.com/736x/24/6d/15/246d150a3eb68c91cfedbbd928f5f00f.jpg);
+        background-image: url(imgs/spaceBackground.jpg);
         -webkit-background-size: cover;
         -moz-background-size: cover;
         /* -o--moz-background-size: */
+        background-size: cover;
     }
 
     body {
@@ -36,56 +37,63 @@
     }
 
     #carrotdiv {
-      position: relative;
-        float: left;
+      position: absolute;
+        top: 50px;
+        left: 200px;
     }
     #carrotdivheader {
       padding: 10px;
       cursor: move;
     }
     #meatdiv {
-      position: relative;
-        float: left;
+        top: 50px;
+        left: 400px;
+    position: absolute;
     }
     #meatdivheader {
       padding: 10px;
       cursor: move;
     }
     #cheesediv {
-      position: relative;
-        float: left;
+        top: 50px;
+        left: 600px;
+      position: absolute;
     }
     #cheesedivheader {
       padding: 10px;
       cursor: move;
     }
     #breaddiv {
-      position: relative;
-        float: left;
+        top: 50px;
+        left: 800px;
+      position: absolute;
     }
     #breaddivheader {
       padding: 10px;
       cursor: move;
     }
     #candydiv {
-      position: relative;
-        float: left;
+        top: 50px;
+        left: 1000px;
+        position: absolute;
     }
     #candydivheader {
       padding: 10px;
       cursor: move;
     }
     #veggiediv {
-      position: relative;
-        float: left;
+        top: 50px;
+        left: 1200px;
+      position: absolute;
     }
     #veggiedivheader {
       padding: 10px;
       cursor: move;
     }
     #applediv {
-      position: relative;
-        float: left;
+        top: 50px;
+        left: 1400px;
+      position: absolute;
     }
     #appledivheader {
       padding: 10px;
@@ -177,8 +185,5 @@
         100%   { transform: translate(0px, -0px); }  
 
       }
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 6d2464c10f809a303838518ed08253c300aae9c7
