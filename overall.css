@@ -1,4 +1,3 @@
-<style>
     body{
         background-image: url(https://i.pinimg.com/736x/24/6d/15/246d150a3eb68c91cfedbbd928f5f00f.jpg);
         -webkit-background-size: cover;
@@ -36,6 +35,63 @@
         background-image: url('imgs/candy.svg');
     }
 
+    #carrotdiv {
+      position: relative;
+        float: left;
+    }
+    #carrotdivheader {
+      padding: 10px;
+      cursor: move;
+    }
+    #meatdiv {
+      position: relative;
+        float: left;
+    }
+    #meatdivheader {
+      padding: 10px;
+      cursor: move;
+    }
+    #cheesediv {
+      position: relative;
+        float: left;
+    }
+    #cheesedivheader {
+      padding: 10px;
+      cursor: move;
+    }
+    #breaddiv {
+      position: relative;
+        float: left;
+    }
+    #breaddivheader {
+      padding: 10px;
+      cursor: move;
+    }
+    #candydiv {
+      position: relative;
+        float: left;
+    }
+    #candydivheader {
+      padding: 10px;
+      cursor: move;
+    }
+    #veggiediv {
+      position: relative;
+        float: left;
+    }
+    #veggiedivheader {
+      padding: 10px;
+      cursor: move;
+    }
+    #applediv {
+      position: relative;
+        float: left;
+    }
+    #appledivheader {
+      padding: 10px;
+      cursor: move;
+    }
+
     .button {
         background-color: transparent;
         border: none;
@@ -45,6 +101,7 @@
         font-size: 2rem;
         color: white;
         font-weight: 600;
+        
     }
     .dropdown {
         display: inline-block;
@@ -120,5 +177,3 @@
         100%   { transform: translate(0px, -0px); }  
 
       }
-
-</style>
