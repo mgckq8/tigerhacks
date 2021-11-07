@@ -36,56 +36,63 @@
     }
 
     #carrotdiv {
-      position: relative;
-        float: left;
+      position: absolute;
+        top: 50px;
+        left: 200px;
     }
     #carrotdivheader {
       padding: 10px;
       cursor: move;
     }
     #meatdiv {
-      position: relative;
-        float: left;
+        top: 50px;
+        left: 400px;
+    position: absolute;
     }
     #meatdivheader {
       padding: 10px;
       cursor: move;
     }
     #cheesediv {
-      position: relative;
-        float: left;
+        top: 50px;
+        left: 600px;
+      position: absolute;
     }
     #cheesedivheader {
       padding: 10px;
       cursor: move;
     }
     #breaddiv {
-      position: relative;
-        float: left;
+        top: 50px;
+        left: 800px;
+      position: absolute;
     }
     #breaddivheader {
       padding: 10px;
       cursor: move;
     }
     #candydiv {
-      position: relative;
-        float: left;
+        top: 50px;
+        left: 1000px;
+        position: absolute;
     }
     #candydivheader {
       padding: 10px;
       cursor: move;
     }
     #veggiediv {
-      position: relative;
-        float: left;
+        top: 50px;
+        left: 1200px;
+      position: absolute;
     }
     #veggiedivheader {
       padding: 10px;
       cursor: move;
     }
     #applediv {
-      position: relative;
-        float: left;
+        top: 50px;
+        left: 1400px;
+      position: absolute;
     }
     #appledivheader {
       padding: 10px;
