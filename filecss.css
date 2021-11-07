@@ -61,7 +61,6 @@
   .dropdown {
         display: inline-block;
         position: relative;
-        float: left;
     }
 
     .dropdown-content {
