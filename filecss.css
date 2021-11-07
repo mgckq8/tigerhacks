@@ -39,10 +39,7 @@
                 margin-right: auto;
                 margin-left: auto;
                 margin-bottom: auto;
-                    
-                
-                
-                
+                background-color: #333;
             }
             .links{
                 color: white;
@@ -127,6 +124,30 @@
     }
     label{
         color: white;
+    }
+    #quizbox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid white;
+        border-style: inset;
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: auto;
+        text-align: center;
+        font-family: "Comic Sans MS", "Comic Sans", Arial, Helvetica, sans-serif;
+        background-color: #333;
+        
+    }
+    #buttonHolder{
+        align-items: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #submitButton{
+        background-color: transparent;
     }
     
             

@@ -27,15 +27,16 @@
             <a href="index.html">Home</a>
             <a href="form.html">Quiz</a>
         </nav>
-
-        <div class="Facts">
-            <form action="phpfile.php" method ="post" id="quizForm">
+        <div class="titleoffacts"><p1>Food Quiz</p1></div>
+        <div id="quizbox">
+            <form action="phpfile.php" method ="post" id="quizForm" name="formquiz">
                 <p>Is tomato a fruit or a vegetable?</p>
                 <input type="radio" id="fruit" name="fruitQuestion" value="fruit">
                 <label for="fruit">Fruit</label>
                 <input type="radio" id="veggie" name="fruitQuestion" value="veggie">
                 <label for="veggie">Vegetable</label>
-
+                <br>
+                <br>
                 <p>What animal provides more than 90% of the World's milk?</p>
                 <input type="radio" id="goat" name="milkQuestion" value="goat">
                 <label for="goat">Goat</label>
@@ -45,7 +46,8 @@
                 <label for="almond">Almond</label>  
                 <input type="radio" id="sheep" name="milkQuestion" value="sheep">
                 <label for="sheep">Sheep</label>
-
+                <br>
+                <br>
                 <p>Which option is not a type of fat?</p>
                 <input type="radio" id="saturated" name="fatQuestion" value="saturated">
                 <label for="saturated">Saturated Fat</label>
@@ -55,7 +57,8 @@
                 <label for="trans">Trans Fat</label>
                 <input type="radio" id="poly" name="fatQuestion" value="poly">
                 <label for="poly">Poly Fat</label>  
-                
+                <br>
+                <br>
                 <p>Which option is not a type of grain?</p>
                 <input type="radio" id="corn" name="grainQuestion" value="corn">
                 <label for="corn">Corn</label>
@@ -65,7 +68,8 @@
                 <label for="barley">Barley</label>
                 <input type="radio" id="wheat" name="grainQuestion" value="wheat">
                 <label for="wheat">Wheat</label>
-
+                <br>
+                <br>
                 <p>Lettuce and Spinach are from what part of a plant?</p>
                 <input type="radio" id="root" name="veggieQuestion" value="root">
                 <label for="root">Roots</label>
@@ -75,7 +79,8 @@
                 <label for="flower">Flowers</label>
                 <input type="radio" id="leaves" name="veggieQuestion" value="leaves">
                 <label for="leaves">Leaves</label>
-
+                <br>
+                <br>
                 <p>What is the most widely eaten meat in the World?</p>
                 <input type="radio" id="pork" name="meatQuestion" value="pork">
                 <label for="pork">Pork</label>
@@ -86,7 +91,9 @@
                 <input type="radio" id="chicken" name="meatQuestion" value="chicken">
                 <label for="chicken">Chicken</label>
                 <br>
-                <input type="submit" value="submit">
+                <div id="buttonHolder">
+                    <input id="submitButton" type="submit" value="submit">
+                </div>
             </form>
         </div>
         
